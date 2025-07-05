@@ -64,6 +64,26 @@
       font-size: 0.9rem;
       color: #888;
     }
+
+    .screenshot-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .screenshot {
+      flex: 1 1 300px;
+      max-width: 320px;
+    }
+
+    .screenshot img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body>
@@ -81,12 +101,13 @@
       <li>☁️ iCloud sync keeps your progress safe and private</li>
     </ul>
 
-    <div class="screenshot">
-      <img src="images/fogfern_map_view.png" alt="Map View of Parks">
-    </div>
-
-    <div class="screenshot">
-      <img src="images/fogfern_detail_view.png" alt="Golden Gate Park Detail View">
+    <div class="screenshot-row">
+      <div class="screenshot">
+        <img src="images/fogfern_map_view.png" alt="Map View of Parks">
+      </div>
+      <div class="screenshot">
+        <img src="images/fogfern_detail_view.png" alt="Golden Gate Park Detail View">
+      </div>
     </div>
 
     <h2>Support</h2>

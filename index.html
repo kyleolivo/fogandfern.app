@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fog & Fern – Explore San Francisco Parks</title>
+  <link rel="icon" type="image/png" href="images/fogandfern.png" />
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -21,8 +22,25 @@
       padding: 2.5rem;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
     }
 
+    .app-icon-wrapper {
+      display: inline-block;
+      padding: 12px;
+      background: linear-gradient(#ffffff, #f0f0f0);
+      border-radius: 24px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+    }
+
+    .app-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 22.5%; /* approximates iOS corner radius on icons */
+      display: block;
+    }
+    
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
@@ -32,10 +50,12 @@
       font-size: 1.4rem;
       margin-top: 2rem;
       margin-bottom: 0.5rem;
+      text-align: left;
     }
 
     p {
       margin-bottom: 1rem;
+      text-align: left;
     }
 
     a {
@@ -45,24 +65,6 @@
 
     a:hover {
       text-decoration: underline;
-    }
-
-    .screenshot {
-      margin: 1.5rem 0;
-      text-align: center;
-    }
-
-    .screenshot img {
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #888;
     }
 
     .screenshot-row {
@@ -84,10 +86,36 @@
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
+
+    .app-store-button {
+      display: inline-block;
+      margin: 1.5rem 0;
+      padding: 0.75rem 1.5rem;
+      background-color: #007aff;
+      color: white;
+      font-weight: 500;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .app-store-button:hover {
+      background-color: #005bb5;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
   </style>
 </head>
 <body>
   <div class="container">
+    <div class="app-icon-wrapper">
+      <img src="images/fogandfern.png" alt="Fog & Fern App Icon" class="app-icon" />
+    </div>
     <h1>Fog & Fern</h1>
     <p><strong>Explore every park in San Francisco—one step at a time.</strong></p>
 
@@ -98,6 +126,10 @@
         <img src="images/fogfern_map_view.png" alt="Map View of Parks">
       </div>
     </div>
+
+    <a href="https://apps.apple.com/us/app/fog-fern/id6747925086" target="_blank" rel="noopener noreferrer">
+      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=2025-07-01" alt="Download on the App Store" style="height: 60px; margin-top: 1.5rem;" />
+    </a>
     
     <h2>Features</h2>
     <ul>
